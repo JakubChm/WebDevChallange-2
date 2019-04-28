@@ -127,7 +127,7 @@
     align-items: center;
     margin-top: 115px;
     height: 530px;
-    background-image: url("/img/Background.png");
+    background-image: url("img/Background.png");
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
@@ -304,12 +304,12 @@
       transform: translate(calc(-500rem / 16), -50%);
       padding-bottom: 80px; }
     .wrapper .about__right {
-      z-index: 0ssssssssssssssssssssssssssssssssssssssssssssssss;
+      z-index: 0;
       position: absolute;
       right: 0;
       width: calc(100% - ((100% - 1000px) / 2) - 194.5px);
       height: 100%;
-      background-image: url("/img/background1.jpg");
+      background-image: url("img/background1.jpg");
       background-repeat: no-repeat;
       background-position: center;
       -webkit-background-size: cover;
