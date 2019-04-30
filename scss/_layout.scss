@@ -538,7 +538,7 @@
 
             .value__p-style {
               @include p-style ($f-xs, #777, -0.35px);
-              width: 100%;
+              line-height: 24px;
             }
           }
         }

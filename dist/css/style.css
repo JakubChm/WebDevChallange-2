@@ -641,7 +641,7 @@
             color: #777;
             font-weight: 400;
             letter-spacing: -0.35px;
-            width: 100%; }
+            line-height: 24px; }
   .wrapper .reviev-wrapper .reviev {
     max-width: 1000px;
     margin: 0 auto;
