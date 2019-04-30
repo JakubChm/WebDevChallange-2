@@ -6,7 +6,7 @@
   .top-container {
     background-color: #fff;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     top: 0;
     left: 0;
     width: 100vw;
@@ -18,7 +18,7 @@
       justify-content: space-between;
       align-items: center;
       max-width: 1000px;
-      height: 115px;
+      height: (115rem / 16);
       margin: 0 auto;
 
       .navbar__logo {
@@ -28,8 +28,8 @@
         cursor: pointer;
 
         &__logo-img {
-          width: 35px;
-          height: 35px;
+          width: (40rem / 16);
+          height: (40rem / 16);
           padding: 6px;
         }
 
@@ -58,8 +58,8 @@
 
           a {
             display: block;
-            padding: calc(15rem / 16) calc(7.5rem / 16);
-            margin: 0 calc(7.5rem / 16);
+            padding: (15rem / 16) (7.5rem / 16);
+            margin: 0 (7.5rem / 16);
 
             &::after {
               content: "";
@@ -97,7 +97,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 115px;
-    height: 530px;
     background-image: url('../img/Background.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -105,7 +104,6 @@
 
     &::before {
       position: absolute;
-      top: 0;
       content: "";
       display: block;
       width: 100%;
@@ -115,40 +113,37 @@
     }
 
     .header__content {
-      position: absolute;
+      z-index: 1;
       width: 650px;
       height: 100%;
+      margin: (120rem/16);
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
       color: #fff;
 
       .slogan {
-        margin: 120px 0 40px;
+        margin-bottom: (40rem/16);
         font-size: $f-xl;
         font-weight: 700;
         text-align: center;
-        line-height: calc(65rem / 16);
+        line-height: 65rem / 16;
         text-transform: uppercase;
       }
 
       .p-style {
         @include p-style ($f-m, #ccc, -0.5px);
-        margin-bottom: 55px;
+        margin-bottom: (55rem/16);
       }
 
       .cta-button {
         @include cta-button;
-        margin-bottom: 120px;
         transition: .3s;
 
         &:hover {
           background-color: #477e42;
         }
       }
-
-
     }
   }
 
@@ -157,15 +152,16 @@
     flex-direction: column;
     align-items: center;
     max-width: 1000px;
-    margin: 80px auto;
+    padding: (80rem/16) (30rem/16);
+    margin: 0 auto;
     text-align: center;
     background-color: #fff;
 
     &__title {
       margin-bottom: 85px;
-      // TODO zrobić h3 mixin
 
       &__header {
+        padding: 0 30px;
         font-size: $f-l;
         font-weight: 700;
         color: #222222;
@@ -176,13 +172,13 @@
 
       .p-style {
         @include p-style ($f-m, #777, -0.5px);
+        padding: 0 30px;
       }
     }
 
     &__features {
       display: flex;
       justify-content: center;
-      width: 90%;
       margin: 0 auto;
 
       .feature {
@@ -211,22 +207,18 @@
         }
 
         .desctription {
-
-          // padding-right: 2rem;
-          // padding-right: 2rem;
-          // TODO zrobić h3 mixin
-          //
           h3 {
             color: #222222;
             font-size: $f-s;
-            padding: 27px 0;
+            padding: 37px 0 5px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: -0.45px;
           }
 
           .p-style {
-            @include p-style ($f-xs, #777, -0.35px)
+            @include p-style ($f-xs, #777, -0.35px);
+            line-height: 24px;
           }
         }
 
@@ -234,6 +226,7 @@
     }
   }
 
+  // TODO about section -> to grid
   .about {
     position: relative;
     width: 100%;
@@ -241,11 +234,15 @@
     background-color: #e9e9e9;
 
     &__left {
+      height: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(calc(-500rem / 16), -50%);
       padding-bottom: 80px;
+
+      img {
+        transform: translate(calc(-500rem / 16), -50%);
+      }
     }
 
     &__right {
@@ -261,11 +258,18 @@
       overflow: hidden;
 
       &::before {
+        // content: "";
+        // display: block;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // width: 100%;
+        // height: 100%;
+        // background-color: #000;
+        // opacity: 0.75;
+        position: absolute;
         content: "";
         display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
         background-color: #000;
@@ -274,14 +278,14 @@
 
       &__description {
         position: absolute;
+        // z-index: 4;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        width: 50%;
-        margin: calc(100rem / 16) 0 calc(100rem / 16) calc(100rem / 16);
+        width: 60%;
+        margin: calc(100rem / 16) calc(100rem / 16) calc(100rem / 16) calc(100rem / 16);
 
-        // TODO zrobić h3 mixin
         h3 {
           color: #ffffff;
           font-size: 40px;
@@ -303,27 +307,27 @@
 
         .p-style {
           @include p-style (1rem, #ccc, -0.5px);
-
-          &__margin-bottom {
-            margin-bottom: 25px;
-          }
+          margin-bottom: 25px;
         }
 
-
-        // TODO zrobić clasy UL i LI
-        ul {
+        &__ul {
           display: flex;
           flex-direction: column;
           align-content: flex-start;
+          margin-bottom: 33px;
 
-          li {
+          &__li {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
 
-            img {
+            &__img {
               padding-right: 20px;
+            }
+
+            .li__p-style {
+              @include p-style (1rem, #ccc, -0.5px);
             }
           }
         }
@@ -342,7 +346,6 @@
   }
 
   .portfolio {
-    // height: 850px;
     padding-top: 80px;
     overflow: hidden;
 
@@ -376,9 +379,11 @@
         flex-direction: column;
         justify-content: flex-start;
         flex-basis: 50%;
+        margin-bottom: 100px;
+
 
         .content1 {
-          h3 {
+          &__title {
             color: #222222;
             font-family: $font-title;
             font-size: $f-s;
@@ -388,8 +393,10 @@
             margin-bottom: 26px;
           }
 
-          .portfolio__p-style {
+          &__p-style {
             @include p-style (1rem, #777, -0.4px);
+            display: block;
+            width: 82%;
             margin-bottom: 24px;
           }
         }
@@ -468,22 +475,20 @@
   .value-wrapper {
     background-color: #f9f9f9;
     padding: 80px 0;
-    height: 560px;
 
 
     .value {
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 1000px;
+      max-width: 1100px;
       text-align: center;
       margin: 0 auto;
 
-      .value__title {
+      &__title {
         margin-bottom: 85px;
-        // TODO zrobić h3 mixin
 
-        .value__title__header {
+        &__header {
           font-size: $f-l;
           font-weight: 700;
           color: #222222;
@@ -502,14 +507,15 @@
         justify-content: center;
         width: 100%;
         margin: 0 auto;
+        padding: 30px;
 
         .value__feature {
           display: flex;
-          flex-direction: column;
           justify-content: flex-start;
+          flex-direction: column;
           align-content: space-between;
+          padding: 0 15px;
           margin-right: 55px;
-
 
           &:last-child {
             margin-right: 0;
@@ -529,11 +535,7 @@
           }
 
           .value__desctription {
-            // padding-right: 2rem;
-            // padding-right: 2rem;
-            // TODO zrobić h3 mixin
-
-            h3 {
+            &__title {
               color: #222222;
               font-size: $f-s;
               padding: 27px 0;
@@ -547,7 +549,6 @@
               width: 100%;
             }
           }
-
         }
       }
     }
@@ -555,13 +556,13 @@
 
   .reviev-wrapper {
     .reviev {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       max-width: 1000px;
-      text-align: center;
       margin: 0 auto;
-
+      padding: 100px 30px;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      text-align: center;
 
       &__title {
         margin-bottom: 85px;
@@ -615,7 +616,6 @@
         flex-direction: column;
         justify-content: space-between;
         width: calc(650rem / 16);
-        height: calc(170rem / 16);
         background-color: #f9f9f9;
         padding: 40px 50px;
 
@@ -666,9 +666,9 @@
       padding: 15px 30px;
       transition: .3s;
 
-
       &:hover {
-        background-color: #477e42;
+        background-color: #fff;
+        color: #7cc576;
       }
     }
   }
@@ -678,12 +678,10 @@
     justify-content: center;
     padding: 60px;
 
-    // TODO poprawić logop znacznik
-    .client-logop {
+    .client-logo-pic {
       height: 40px;
       margin: 0 20px;
     }
-
   }
 
   .top-footer {
@@ -719,14 +717,12 @@
             width: 25px;
             margin-right: 15px;
 
-            // TODO dorobić znaczniki dla p i img
-            img {
+            .top-footer-img {
               display: block;
             }
           }
 
-          // TODO dorobić znaczniki dla p i img
-          p {
+          .top-footer-text {
             @include p-style(16px, #ececec, 0);
             line-height: 22px;
 

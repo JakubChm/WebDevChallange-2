@@ -18,3 +18,20 @@
     font-weight: 400;
     letter-spacing: $ls;
 }
+
+@mixin h3 ($color) {
+    color: $color;
+    font-size: $f-s;
+    padding: 37px 0 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.45px;
+}
+
+@mixin rem-height ($number) {
+    height: $number / 16;
+}
+
+@mixin rem-width ($number) {
+    width: $number / 16;
+}
