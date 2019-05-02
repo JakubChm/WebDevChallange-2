@@ -1,8 +1,8 @@
 @mixin cta-button {
-    font-size: 1rem;
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
     color: #fff;
-    padding: calc(23rem / 16) calc(36rem / 16);
-    border-radius: calc(30rem / 16);
+    padding: calc(13px + (23 - 13) * ((100vw - 320px) / (1920 - 320))) calc(26px + (36 - 26) * ((100vw - 320px) / (1920 - 320)));
+    border-radius: 30px;
     background-color: #7cc576;
     font-weight: 700;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
@@ -11,9 +11,8 @@
     text-transform: uppercase;
 }
 
-@mixin p-style ($fz, $fc, $ls) {
+@mixin p-style ($fc, $ls) {
     font-family: $font-description;
-    font-size: $fz;
     color: $fc;
     font-weight: 400;
     letter-spacing: $ls;
@@ -22,10 +21,19 @@
 @mixin h3 ($color) {
     color: $color;
     font-size: $f-s;
-    padding: 37px 0 5px;
+    padding: calc(20px + (37 - 20) * ((100vw - 320px) / (1920 - 320))) 0 5px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.45px;
+}
+
+@mixin h2 ($color) {
+    padding: 0 30px 17px;
+    font-size: $f-l;
+    font-weight: 700;
+    color: $color;
+    text-transform: uppercase;
+    letter-spacing: -2px;
 }
 
 @mixin rem-height ($number) {

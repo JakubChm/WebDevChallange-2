@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Weekly Webdev Challange no3</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/destyle.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -58,9 +60,9 @@
             <div class="picture">
               <img src="img/Icon_-_Heart.png" alt="heart">
             </div>
-            <div class="desctription">
-              <h3>beautiful designs</h3>
-              <p class="p-style">Proin iaculis purus consequat sem cure
+            <div class="description">
+              <h3 class="description__title">beautiful designs</h3>
+              <p class="description__p-style">Proin iaculis purus consequat sem cure
                 digni ssim. Donec porttitora entum suscipit
                 aenean rhoncus posuere odio in tincidunt.</p>
             </div>
@@ -69,9 +71,9 @@
             <div class="picture">
               <img src="img/Icon_-_Mobile.png" alt="heart">
             </div>
-            <div class="desctription">
-              <h3>responsive web</h3>
-              <p class="p-style">Proin iaculis purus consequat sem cure
+            <div class="description">
+              <h3 class="description__title">responsive web</h3>
+              <p class="description__p-style">Proin iaculis purus consequat sem cure
                 digni ssim. Donec porttitora entum suscipit
                 aenean rhoncus posuere odio in tincidunt.</p>
             </div>
@@ -80,9 +82,9 @@
             <div class="picture">
               <img src="img/Icon_-_Graph.png" alt="mobile">
             </div>
-            <div class="desctription">
-              <h3>Marketing tools</h3>
-              <p class="p-style">Proin iaculis purus consequat sem cure
+            <div class="description">
+              <h3 class="description__title">Marketing tools</h3>
+              <p class="description__p-style">Proin iaculis purus consequat sem cure
                 digni ssim. Donec porttitora entum suscipit
                 aenean rhoncus posuere odio in tincidunt.</p>
             </div>
@@ -97,10 +99,10 @@
         </div>
         <div class="about__right">
           <div class="about__right__description">
-            <h3>
+            <h2>
               <span class="break-line">Just relax <span class="amper">&</span></span>
               <span class="break-line">let us do the heavy lifting</span>
-            </h3>
+            </h2>
             <p class="p-style">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
               rhoncus posuere odio in tincidunt.</p>
             <ul class="about__right__description__ul">
@@ -122,8 +124,10 @@
         </div>
       </section>
       <section class="portfolio">
-        <h2 class="portfolio__title">latest project</h2>
-        <p class="p-style">Proin iaculis purus consequat sem cure </p>
+        <div class="portfolio__title">
+          <h2 class="portfolio__title__header">latest project</h2>
+          <p class="p-style">Proin iaculis purus consequat sem cure </p>
+        </div>
         <div class="portfolio__wrapper">
           <div class="portfolio__content">
             <div class="content1">
@@ -133,25 +137,25 @@
                 odio in tincidunt.</p>
             </div>
             <div class="content2">
-              <ul>
-                <li>
-                  <img src="img/e-commerce.png" alt="e-commerce">
+              <ul class="content2__list">
+                <li class="content2__list__item">
+                  <img class="content2__list__item__img" src="img/e-commerce.png" alt="e-commerce">
                   <div class="li__text-box">
-                    <h3>E-Commerce Ready</h3>
+                    <h3 class="li__text-box__title">E-Commerce Ready</h3>
                     <p class="li__p-style">Proin iaculis purus consequat sem cure digni ssim. </p>
                   </div>
                 </li>
-                <li>
-                  <img src="img/Seo_features.png" alt="SEO">
+                <li class="content2__list__item">
+                  <img class="content2__list__item__img" src="img/Seo_features.png" alt="SEO">
                   <div class="li__text-box">
-                    <h3>Powerful SEO Features</h3>
+                    <h3 class="li__text-box__title">Powerful SEO Features</h3>
                     <p class="li__p-style">Proin iaculis purus consequat sem cure.</p>
                   </div>
                 </li>
-                <li>
-                  <img src="img/secure.png" alt="Secure">
+                <li class="content2__list__item">
+                  <img class="content2__list__item__img" src="img/secure.png" alt="Secure">
                   <div class="li__text-box">
-                    <h3>Secure Encryption</h3>
+                    <h3 class="li__text-box__title">Secure Encryption</h3>
                     <p class="li__p-style">Proin iaculis purus consequat sem cure iaculis purus.</p>
                   </div>
                 </li>
@@ -160,7 +164,7 @@
             <div class="content3">
               <p class="content3__p-style">Proin iaculis purus consequat sem cure digni ssim donec
                 porttitora entum suscipit aenean rhoncus posuere odio in.</p>
-              <a href="#"><h3>View Details</h3><img src="img/Arrow-Right.png" alt="arrow"></a>
+              <a class="content3__link" href="#"><h3 class="content3__link__title">View Details</h3><img class="content3__link__img" src="img/Arrow-Right.png" alt="arrow"></a>
             </div>
           </div>
           <div class="portfolio__img">
@@ -209,47 +213,53 @@
           </div>
         </div>
       </section>
-      <section class="reviev-wrapper">
-        <div class="reviev">
-          <div class="reviev__title">
-            <h3 class="reviev__title__header">
-              our awesome clients
-            </h3>
-            <p class="reviev__title__p-style">Proin iaculis purus consequat sem cure. </p>
+      <section class="reviev">
+        <div class="reviev__title">
+          <h3 class="reviev__title__header">
+            our awesome clients
+          </h3>
+          <p class="reviev__title__p-style">Proin iaculis purus consequat sem cure. </p>
+        </div>
+        <div class="reviev__content">
+          <div class="reviev__content__circle">
+            <img class="first-client-face" src="img/2009_meme.png" alt="meme">
           </div>
-          <div class="reviev__content">
-            <div class="reviev__content__circle">
-              <img class="first-client-face" src="img/2009_meme.png" alt="meme">
-            </div>
-            <img class="rev-content1" src="img/testimonials_arrow.png" alt="testimonials_arrow">
-            <div class="reviev__content__text-container">
-              <p class="reviev-text">“ Proin iaculis purus consequat sem cure digni ssim
-                donec porttitora entum suscipit aenean rhoncus. ” </p>
-              <p class="reviev-name">- Jamie Richardson, Founder of Cocoa Media</p>
-            </div>
-          </div>
-          <div class="reviev__content">
-            <div class="reviev__content__text-container">
-              <p class="reviev-text">“ Proin iaculis purus consequat sem cure digni ssim
-                donec porttitora entum suscipit aenean rhoncus. ” </p>
-              <p class="reviev-name">- Kim Thompson, Founder of Rainel</p>
-            </div>
-            <img class="rev-content2" src="img/testimonials_arrow.png" alt="testimonials_arrow">
-            <div class="reviev__content__circle">
-              <img class="second-client-face" src="img/2009_meme.png" alt="meme">
-            </div>
+          <!-- <img class="reviev__content__arrow1" src="img/testimonials_arrow.png" alt="testimonials_arrow"> -->
+          <div class="reviev__content__text-container">
+            <img class="reviev__content__text-container__arrow1" src="img/testimonials_arrow.png"
+              alt="testimonials_arrow">
+            <p class="reviev-text">“ Proin iaculis purus consequat sem cure digni ssim
+              donec porttitora entum suscipit aenean rhoncus. ” </p>
+            <p class="reviev-name">- Jamie Richardson, Founder of Cocoa Media</p>
           </div>
         </div>
+        <div class="reviev__content">
+          <div class="reviev__content__text-container">
+            <p class="reviev-text">“ Proin iaculis purus consequat sem cure digni ssim
+              donec porttitora entum suscipit aenean rhoncus. ” </p>
+            <p class="reviev-name">- Kim Thompson, Founder of Rainel</p>
+            <img class="reviev__content__text-container__arrow2" src="img/testimonials_arrow.png"
+              alt="testimonials_arrow">
+          </div>
+          <!-- <img class="reviev__content__arrow2" src="img/testimonials_arrow.png" alt="testimonials_arrow"> -->
+          <div class="reviev__content__circle">
+            <img class="second-client-face" src="img/2009_meme.png" alt="meme">
+          </div>
+        </div>
+
       </section>
       <section class="cta-section">
         <h2 class="cta-section__title">ready to talk about your next project?</h2>
         <a class="cta-section__cta-button" href="#">Contact us</a>
       </section>
       <section class="client-logo">
-        <img src="img/Logos1.png" alt="client-logo1" class="client-logo-pic client-logo__logo1">
-        <img src="img/Logos2.png" alt="client-logo1" class="client-logop-pic client-logo__logo2">
-        <img src="img/Logos3.png" alt="client-logo1" class="client-logop-pic client-logo__logo3">
-        <img src="img/Logos4.png" alt="client-logo1" class="client-logop-pic client-logo__logo4">
+        <div class="client-logo__column">
+          <img src="img/Logos1.png" alt="client-logo1" class="client-logo-pic client-logo__logo1">
+          <img src="img/Logos2.png" alt="client-logo1" class="client-logo-pic client-logo__logo2">
+        </div>
+        <div class="client-logo__column"><img src="img/Logos3.png" alt="client-logo1"
+            class="client-logo-pic client-logo__logo3">
+          <img src="img/Logos4.png" alt="client-logo1" class="client-logo-pic client-logo__logo4"></div>
       </section>
       <section class="top-footer">
         <div class="top-footer__column top-footer__column-contact">
