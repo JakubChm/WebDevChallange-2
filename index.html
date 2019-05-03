@@ -15,30 +15,39 @@
 <body>
   <div class="wrapper">
     <header>
-      <div class="top-container">
-        <nav class="navbar">
-          <a class="navbar__logo" href="#">
+      <div class="navbar-wrapper">
+        <div class="top-container">
+          <nav class="navbar">
+            <a class="navbar__logo" href="#">
             <img class="navbar__logo__logo-img" src="img/logo-icon.png" alt="logoicon">
             <h2 class="navbar__logo__logo-text">Treehouse</h2>
-        </a>
-          <ul class="navbar__nav">
-            <li class="navbar__nav__element">
-              <a href="#">Home</a>
-            </li>
-            <li class="navbar__nav__element">
-              <a href="#">About</a>
-            </li>
-            <li class="navbar__nav__element">
-              <a href="#">Blog</a>
-            </li>
-            <li class="navbar__nav__element">
-              <a href="#">Portfolio</a>
-            </li>
-            <li class="navbar__nav__element">
-              <a href= #">Contact</a>
-            </li>
-          </ul>
-        </nav>
+          </a>
+          </nav>
+          <nav class="navbar__nav">
+            <ul class="navbar__nav__ul">
+              <li class="navbar__nav__ul__element">
+                <a href="#">Home</a>
+              </li>
+              <li class="navbar__nav__ul__element">
+                <a href="#">About</a>
+              </li>
+              <li class="navbar__nav__ul__element">
+                <a href="#">Blog</a>
+              </li>
+              <li class="navbar__nav__ul__element">
+                <a href="#">Portfolio</a>
+              </li>
+              <li class="navbar__nav__ul__element">
+                <a href= #">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="btn btn-not-active">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
       <div class="header">
         <div class="header__content">
@@ -224,24 +233,24 @@
           <div class="reviev__content__circle">
             <img class="first-client-face" src="img/2009_meme.png" alt="meme">
           </div>
-          <!-- <img class="reviev__content__arrow1" src="img/testimonials_arrow.png" alt="testimonials_arrow"> -->
-          <div class="reviev__content__text-container">
-            <img class="reviev__content__text-container__arrow1" src="img/testimonials_arrow.png"
-              alt="testimonials_arrow">
-            <p class="reviev-text">“ Proin iaculis purus consequat sem cure digni ssim
-              donec porttitora entum suscipit aenean rhoncus. ” </p>
-            <p class="reviev-name">- Jamie Richardson, Founder of Cocoa Media</p>
+          <div class="reviev__content__text">
+            <img class="reviev__content__text__arrow1" src="img/testimonials_arrow.png" alt="testimonials_arrow">
+            <div class="reviev__content__text__container">
+              <p class="reviev-text">“ Proin iaculis purus consequat sem cure digni ssim
+                donec porttitora entum suscipit aenean rhoncus. ” </p>
+              <p class="reviev-name">- Jamie Richardson, Founder of Cocoa Media</p>
+            </div>
           </div>
         </div>
         <div class="reviev__content">
-          <div class="reviev__content__text-container">
-            <p class="reviev-text">“ Proin iaculis purus consequat sem cure digni ssim
-              donec porttitora entum suscipit aenean rhoncus. ” </p>
-            <p class="reviev-name">- Kim Thompson, Founder of Rainel</p>
-            <img class="reviev__content__text-container__arrow2" src="img/testimonials_arrow.png"
-              alt="testimonials_arrow">
+          <div class="reviev__content__text">
+            <div class="reviev__content__text__container">
+              <p class="reviev-text">“ Proin iaculis purus consequat sem cure digni ssim
+                donec porttitora entum suscipit aenean rhoncus. ” </p>
+              <p class="reviev-name">- Kim Thompson, Founder of Rainel</p>
+            </div>
+            <img class="reviev__content__text__arrow2" src="img/testimonials_arrow.png" alt="testimonials_arrow">
           </div>
-          <!-- <img class="reviev__content__arrow2" src="img/testimonials_arrow.png" alt="testimonials_arrow"> -->
           <div class="reviev__content__circle">
             <img class="second-client-face" src="img/2009_meme.png" alt="meme">
           </div>
@@ -263,7 +272,7 @@
       </section>
       <section class="top-footer">
         <div class="top-footer__column top-footer__column-contact">
-          <h3 class="top-footer__column__h3">Contact Us</h3>
+          <h3 class="top-footer__column__h3">Contact Us <i class="fas fa-angle-down"></i></h3>
           <ul class="top-footer__column__ul">
             <li class="top-footer__li-element">
               <div class="img-container"><img class="top-footer-img" src="img/ico_location.png" alt="location-ico">
@@ -284,7 +293,7 @@
           </ul>
         </div>
         <div class="top-footer__column top-footer__column-posts">
-          <h3 class="top-footer__column__h3">Latest Posts</h3>
+          <h3 class="top-footer__column__h3">Latest Posts <i class="fas fa-angle-down"></i></h3>
           <ul class="top-footer__column__ul">
             <li class="top-footer__li-element">
               <div class="img-container"><img class="top-footer-img" src="img/ico_News_Icon.png" alt="news-ico"></div>
@@ -309,7 +318,7 @@
           </ul>
         </div>
         <div class="top-footer__column top-footer__column-tweets">
-          <h3 class="top-footer__column__h3">Latest Tweets</h3>
+          <h3 class="top-footer__column__h3">Latest Tweets <i class="fas fa-angle-down"></i></h3>
           <ul class="top-footer__column__ul">
             <li class="top-footer__li-element">
               <div class="img-container"><img class="top-footer-img" src="img/Twitter_Icon.png" alt="twitter-ico"></div>
@@ -346,6 +355,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
