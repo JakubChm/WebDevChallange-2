@@ -18,15 +18,6 @@
     letter-spacing: $ls;
 }
 
-@mixin h3 ($color) {
-    color: $color;
-    font-size: $f-s;
-    padding: calc(20px + (37 - 20) * ((100vw - 320px) / (1920 - 320))) 0 5px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: -0.45px;
-}
-
 @mixin h2 ($color) {
     padding: 0 30px 17px;
     font-size: $f-l;
@@ -34,6 +25,15 @@
     color: $color;
     text-transform: uppercase;
     letter-spacing: -2px;
+}
+
+@mixin h3 ($color) {
+    color: $color;
+    font-size: $f-s;
+    padding: calc(20px + (37 - 20) * ((100vw - 320px) / (1920 - 320))) 0 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.45px;
 }
 
 @mixin rem-height ($number) {
