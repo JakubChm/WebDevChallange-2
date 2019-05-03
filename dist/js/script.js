@@ -19,7 +19,7 @@ btnHamburger.addEventListener('click', () => {
 topFooterDiv.forEach((div, i) => {
   div.addEventListener('click', function () {
     topFooterUl[i].classList.toggle('top-footer-active');
-    topFooterIcon[i].classList.toggle('top-footer-icon-active')
+    topFooterIcon[i].classList.toggle('top-footer-icon-active');
   });
 });
 
