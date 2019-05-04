@@ -108,7 +108,7 @@ function liveServer() {
   // gulp.watch('./**/*', {
   //   cwd: './dist/'
   // }, browserSync.reload);
-};
+}
 //Live Server Reload
 function reload(done) {
   browserSync.reload();
@@ -124,18 +124,23 @@ gulp.task('html', () => {
 
 gulp.task('js', () => {
   return gulp.src(['./js/**/*.js'])
-    .pipe(gulp.dest('./dist/js'))
+    .pipe(gulp.dest('./dist/js'));
+});
+gulp.task('favicon', () => {
+  return gulp.src('./favicon.ico')
+    .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('build', gulp.series(['html', 'js', 'css-compile', 'css-minify', 'js-minify', 'img-compression', ]))
+gulp.task('build', gulp.series(['html', 'js', "favicon", 'css-compile', 'css-minify', 'js-minify', 'img-compression', ]));
 
 // Watch
 
 gulp.task('default', function () {
-  gulp.watch('./*.html', gulp.series(['html'], reload))
+  gulp.watch('./favicon.ico', gulp.series(['favicon']));
+  gulp.watch('./*.html', gulp.series(['html'], reload));
   gulp.watch('./scss/**/*.scss', gulp.series(['css-compile']));
   gulp.watch(['./dist/css/*.css', '!dist/css/*.min.css'], gulp.series(['css-minify'], reload));
-  gulp.watch('./js/**/*.js', gulp.series(['js']))
+  gulp.watch('./js/**/*.js', gulp.series(['js']));
   gulp.watch(['./js/*.js', '!./js/*.min.js'], gulp.series(['js-minify'], reload));
   gulp.watch('**/*', {
     cwd: './img/'
