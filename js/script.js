@@ -73,16 +73,18 @@ function easeInOutCubic(t, b, c, d) {
   t -= 2;
   return c / 2 * (t * t * t + 2) + b;
 }
-
+// scroll features
 const scrollFeatures = () => {
   if (window.pageYOffset >= scrollFromTop) {
     nav.classList.add('navbar-wrapper-active');
   } else if (window.pageYOffset < scrollFromTop) {
     nav.classList.remove('navbar-wrapper-active');
   }
+  console.log(pageYOffset);
 };
 window.addEventListener('scroll', scrollFeatures);
 
+// footer show/hode column
 topFooterColumns.forEach((column, i) => {
   column.addEventListener('click', function () {
     topFooterUl[i].classList.toggle('top-footer-active');
