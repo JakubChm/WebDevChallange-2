@@ -68,7 +68,7 @@
 
 
     &__left {
-      width: 710px;
+      width: 38%;
     }
 
     &__right {
@@ -361,11 +361,34 @@
         }
 
         .navbar-active {
+          z-index: 10;
           left: 0;
           opacity: 1;
           border-bottom: 1px solid rgba(85, 85, 85, 0.3);
           border-right: 1px solid rgba(85, 85, 85, 0.3);
         }
+      }
+
+      .navbar-nav-overlay {
+        display: block;
+      }
+
+      .navbar-nav-overlay {
+        z-index: 9;
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+        background-color: #fff;
+        transition: .3s;
+      }
+
+      .navbar-nav-overlay-active {
+        left: 200px;
+        opacity: .75;
+
       }
 
       .btn {
@@ -374,7 +397,6 @@
     }
 
   }
-
 
   .services {
     &__features {
@@ -402,19 +424,26 @@
       width: 100%;
 
       &__description {
+        padding: calc(40px + (80 - 40) * ((100vw - 320px) / (1920 - 320))) 30px;
+
         .p-style {
           width: 100%;
           text-align: justify;
         }
       }
-
-      .cta-button {
-        margin: 0 auto;
-      }
     }
   }
 
   .portfolio {
+    align-items: flex-start;
+
+    &__title {
+
+      &__header {
+        padding: 0px;
+        text-align: left;
+      }
+    }
 
     &__wrapper {
 
@@ -467,6 +496,19 @@
       }
 
       &__text {
+        &__container {
+
+          .reviev-text {
+            text-align: left;
+          }
+
+          .reviev-name {
+            text-align: left;
+            margin-top: 10px;
+
+          }
+        }
+
         &__arrow1 {
           display: none;
           // margin: 0;
@@ -485,30 +527,31 @@
     align-items: center;
 
     &__column {
-
       &__h3 {
+        cursor: pointer;
         text-align: center;
         margin-bottom: 0;
         padding: 15px 0;
 
-        .fa-angle-down {
-          display: block;
-          transition: .3s ease-out;
-        }
+      }
 
-        .top-footer-icon-active {
-          transform: rotate(180deg);
-        }
+      .fa-angle-down {
+        display: inline-block;
+        transition: .3s ease-out;
+        margin-left: 10px;
+      }
 
+      .top-footer-icon-active {
+        transform: rotate(180deg);
       }
 
       &__ul {
-        height: 0;
+        display: none;
         transition: .3s ease-out;
       }
 
       .top-footer-active {
-        height: 200px;
+        display: block;
       }
     }
 
