@@ -15,11 +15,11 @@
 
 <body>
   <div class="wrapper">
-    <header>
+    <header class="home" id="home">
       <div class="navbar-wrapper">
         <div class="top-container">
           <nav class="navbar">
-            <a class="navbar__logo" href="#">
+            <a class="goto-button navbar__logo" href="#">
             <img class="navbar__logo__logo-img" src="img/logo-icon.png" alt="logoicon">
             <h2 class="navbar__logo__logo-text">Treehouse</h2>
           </a>
@@ -27,22 +27,23 @@
           <nav class="navbar__nav">
             <ul class="navbar__nav__ul">
               <li class="navbar__nav__ul__element">
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li class="navbar__nav__ul__element">
-                <a href="#">About</a>
+                <a href="#about">About</a>
               </li>
               <li class="navbar__nav__ul__element">
-                <a href="#">Blog</a>
+                <a href="#blog">Blog</a>
               </li>
               <li class="navbar__nav__ul__element">
-                <a href="#">Portfolio</a>
+                <a href="#portfolio">Portfolio</a>
               </li>
               <li class="navbar__nav__ul__element">
-                <a href= #">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
+          <div class="navbar-nav-overlay"></div>
           <div class="btn btn-not-active">
             <span></span>
             <span></span>
@@ -55,12 +56,12 @@
           <h1 class="slogan">Creative Digital
             Solutions</h1>
           <p class="p-style">Proin iaculis purus consequat sem cure. </p>
-          <a class="cta-button" href="#">View Portfolio</a>
+          <a class="goto-button cta-button" href="#portfolio">View Portfolio</a>
         </div>
       </div>
     </header>
     <main>
-      <section class="services">
+      <section class="services" id="about">
         <div class="services__title">
           <h2 class="services__title__header">Professional Services</h2>
           <p class="p-style">Proin iaculis purus consequat sem cure</p>
@@ -101,7 +102,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="blog">
         <div class="about__left">
           <div class="about__left__img">
             <img src="img/gear_2.png" alt="gear">
@@ -129,11 +130,11 @@
                 <p class="li__p-style">Round The Clock Support</p>
               </li>
             </ul>
-            <a href="#" class="cta-button">Learn more</a>
+            <a href="#portfolio" class="goto-button cta-button">Learn more</a>
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="portfolio__title">
           <h2 class="portfolio__title__header">latest project</h2>
           <p class="p-style">Proin iaculis purus consequat sem cure </p>
@@ -174,7 +175,8 @@
             <div class="content3">
               <p class="content3__p-style">Proin iaculis purus consequat sem cure digni ssim donec
                 porttitora entum suscipit aenean rhoncus posuere odio in.</p>
-              <a class="content3__link" href="#"><h3 class="content3__link__title">View Details</h3><img class="content3__link__img" src="img/Arrow-Right.png" alt="arrow"></a>
+              <a class="goto-button cta-button content3__link" href="#value"><h3 class="content3__link__title">View Details</h3><img class="content3__link__img"src="img/Arrow-Right.png" alt="arrow"></a>
+
             </div>
           </div>
           <div class="portfolio__img">
@@ -182,7 +184,7 @@
           </div>
         </div>
       </section>
-      <section class="value-wrapper">
+      <section class="value-wrapper" id="value">
         <div class="value">
           <div class="value__title">
             <h2 class="value__title__header">culture & Values</h2>
@@ -260,7 +262,7 @@
       </section>
       <section class="cta-section">
         <h2 class="cta-section__title">ready to talk about your next project?</h2>
-        <a class="cta-section__cta-button" href="#">Contact us</a>
+        <a class="goto-button cta-button cta-section__cta-button" href="#contact">Contact us</a>
       </section>
       <section class="client-logo">
         <div class="client-logo__column">
@@ -271,9 +273,9 @@
             class="client-logo-pic client-logo__logo3">
           <img src="img/Logos4.png" alt="client-logo1" class="client-logo-pic client-logo__logo4"></div>
       </section>
-      <section class="top-footer">
+      <section class="top-footer" id="contact">
         <div class="top-footer__column top-footer__column-contact">
-          <h3 class="top-footer__column__h3">Contact Us <i class="fas fa-angle-down"></i></h3>
+          <h3 class="top-footer__column__h3">Contact Us<i class="fas fa-angle-down"></i></h3>
           <ul class="top-footer__column__ul">
             <li class="top-footer__li-element">
               <div class="img-container"><img class="top-footer-img" src="img/ico_location.png" alt="location-ico">
@@ -294,7 +296,7 @@
           </ul>
         </div>
         <div class="top-footer__column top-footer__column-posts">
-          <h3 class="top-footer__column__h3">Latest Posts <i class="fas fa-angle-down"></i></h3>
+          <h3 class="top-footer__column__h3">Latest Posts<i class="fas fa-angle-down"></i></h3>
           <ul class="top-footer__column__ul">
             <li class="top-footer__li-element">
               <div class="img-container"><img class="top-footer-img" src="img/ico_News_Icon.png" alt="news-ico"></div>
@@ -319,7 +321,7 @@
           </ul>
         </div>
         <div class="top-footer__column top-footer__column-tweets">
-          <h3 class="top-footer__column__h3">Latest Tweets <i class="fas fa-angle-down"></i></h3>
+          <h3 class="top-footer__column__h3">Latest Tweets<i class="fas fa-angle-down"></i></h3>
           <ul class="top-footer__column__ul">
             <li class="top-footer__li-element">
               <div class="img-container"><img class="top-footer-img" src="img/Twitter_Icon.png" alt="twitter-ico"></div>
