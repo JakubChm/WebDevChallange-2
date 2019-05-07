@@ -1,19 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:400,700&subset=latin-ext");
-@-webkit-keyframes spin-logo {
-  0% {
-    -webkit-transform: perspective(500px) rotate(0deg) rotate3d(0, 1, 0, 0);
-    transform: perspective(500px) rotate(0deg) rotate3d(0, 1, 0, 0); }
-  100% {
-    -webkit-transform: perspective(500px) rotate(360deg) rotate3d(0, 1, 0, 360deg);
-    transform: perspective(500px) rotate(360deg) rotate3d(0, 1, 0, 360deg); } }
-@keyframes spin-logo {
-  0% {
-    -webkit-transform: perspective(500px) rotate(0deg) rotate3d(0, 1, 0, 0);
-    transform: perspective(500px) rotate(0deg) rotate3d(0, 1, 0, 0); }
-  100% {
-    -webkit-transform: perspective(500px) rotate(360deg) rotate3d(0, 1, 0, 360deg);
-    transform: perspective(500px) rotate(360deg) rotate3d(0, 1, 0, 360deg); } }
-
 .wrapper {
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -1069,19 +1054,22 @@
       -webkit-border-radius: 50%;
       border-radius: 50%;
       background-color: #222;
-      margin: 0 5px; }
+      margin: 0 5px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
       .bottom-footer__contact-icons__img-container:nth-child(1):hover {
-        -webkit-box-shadow: 0px 0px 10px 10px #1EA1F2;
-        box-shadow: 0px 0px 10px 10px #1EA1F2; }
+        -webkit-box-shadow: 0px 0px 10px 5px #1EA1F2;
+        box-shadow: 0px 0px 10px 5px #1EA1F2; }
       .bottom-footer__contact-icons__img-container:nth-child(2):hover {
-        -webkit-box-shadow: 0px 0px 10px 10px #3b5998;
-        box-shadow: 0px 0px 10px 10px #3b5998; }
+        -webkit-box-shadow: 0px 0px 10px 5px #3b5998;
+        box-shadow: 0px 0px 10px 5px #3b5998; }
       .bottom-footer__contact-icons__img-container:nth-child(3):hover {
-        -webkit-box-shadow: 0px 0px 10px 10px #c8232c;
-        box-shadow: 0px 0px 10px 10px #c8232c; }
+        -webkit-box-shadow: 0px 0px 10px 5px #c8232c;
+        box-shadow: 0px 0px 10px 5px #c8232c; }
       .bottom-footer__contact-icons__img-container:nth-child(4):hover {
-        -webkit-box-shadow: 0px 0px 10px 10px #db4a39;
-        box-shadow: 0px 0px 10px 10px #db4a39; }
+        -webkit-box-shadow: 0px 0px 10px 5px #db4a39;
+        box-shadow: 0px 0px 10px 5px #db4a39; }
       .bottom-footer__contact-icons__img-container img {
         display: block; }
 
@@ -1405,6 +1393,14 @@
     .bottom-footer__contact-icons {
       grid-column: 1 / 2;
       grid-row: 0 / 1; } }
+
+@-webkit-keyframes spin-logo {
+  0% {
+    -webkit-transform: perspective(500px) rotate(0deg) rotate3d(0, 1, 0, 0);
+    transform: perspective(500px) rotate(0deg) rotate3d(0, 1, 0, 0); }
+  100% {
+    -webkit-transform: perspective(500px) rotate(360deg) rotate3d(0, 1, 0, 360deg);
+    transform: perspective(500px) rotate(360deg) rotate3d(0, 1, 0, 360deg); } }
 
 @keyframes spin-logo {
   0% {

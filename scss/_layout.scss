@@ -295,6 +295,8 @@
   }
 }
 
+.services-active-scroll {}
+
 .about {
   display: flex;
   background-color: #e9e9e9;
@@ -401,6 +403,8 @@
     }
   }
 }
+
+.about-active-scroll {}
 
 .portfolio {
   display: flex;
@@ -529,6 +533,8 @@
   }
 }
 
+.portfolio-active-scroll {}
+
 .value-wrapper {
   background-color: #f9f9f9;
 
@@ -601,6 +607,8 @@
     }
   }
 }
+
+.value-wrapper-active-scroll {}
 
 .reviev {
   display: flex;
@@ -694,6 +702,8 @@
   }
 }
 
+.reviev-active-scroll {}
+
 .cta-section {
   display: flex;
   flex-direction: column;
@@ -722,6 +732,8 @@
   }
 }
 
+.cta-section-active-scroll {}
+
 .client-logo {
   display: flex;
   flex-wrap: wrap;
@@ -744,6 +756,8 @@
   }
 
 }
+
+.client-logo-active-scroll {}
 
 .top-footer {
   display: flex;
@@ -830,6 +844,8 @@
   }
 }
 
+.top-footer-active-scroll {}
+
 .bottom-footer {
   display: inline-grid;
   width: 100%;
@@ -863,21 +879,23 @@
       border-radius: 50%;
       background-color: #222;
       margin: 0 5px;
+      transition: .3s;
+
 
       &:nth-child(1):hover {
-        box-shadow: 0px 0px 10px 10px #1EA1F2;
+        box-shadow: 0px 0px 10px 5px #1EA1F2;
       }
 
       &:nth-child(2):hover {
-        box-shadow: 0px 0px 10px 10px #3b5998;
+        box-shadow: 0px 0px 10px 5px #3b5998;
       }
 
       &:nth-child(3):hover {
-        box-shadow: 0px 0px 10px 10px #c8232c;
+        box-shadow: 0px 0px 10px 5px #c8232c;
       }
 
       &:nth-child(4):hover {
-        box-shadow: 0px 0px 10px 10px #db4a39;
+        box-shadow: 0px 0px 10px 5px #db4a39;
       }
 
       img {
@@ -887,3 +905,5 @@
     }
   }
 }
+
+.bottom-footer-active-scroll {}
