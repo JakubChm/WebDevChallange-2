@@ -15,7 +15,7 @@ const topFooterUl = document.querySelectorAll('.top-footer__column__ul');
 const topFooterIcon = document.querySelectorAll('.fa-angle-down');
 // AOS init
 AOS.init({
-  once: true,
+  // once: true,
 });
 //  nav function
 const hideNav = () => {
