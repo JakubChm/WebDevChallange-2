@@ -259,13 +259,8 @@
       margin-right: calc(35px + (55 - 35) * ((100vw - 320px) / (1920 - 320)));
       max-width: 280px;
 
-      &:nth-child(1) {}
-
-      &:nth-child(2) {}
-
       &:last-child {
         margin-right: 0;
-
       }
 
       .picture {
@@ -292,7 +287,6 @@
           line-height: 24px;
         }
       }
-
     }
   }
 }
