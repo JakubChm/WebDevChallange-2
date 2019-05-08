@@ -1,6 +1,6 @@
 # WebDevChallange-3
 
-https://jakubchm.github.io/WebDevChallange-2/
+https://jakubchm.github.io/WebDevChallange-3/
 
 ## What i use
 -HTML5,
