@@ -7,5 +7,6 @@ https://jakubchm.github.io/WebDevChallange-3/
 -CSS3,
 -SCSS,
 -JS,
-library:
+
+###library:
 -AOS - Animate on scroll library.

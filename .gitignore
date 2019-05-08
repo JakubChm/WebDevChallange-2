@@ -75,5 +75,6 @@ typings/
 # FuseBox cache
 .fusebox/
 
-
 .jshintrc
+.package.json
+.package-lock.json
