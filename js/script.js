@@ -13,6 +13,10 @@ const menuItems = document.querySelectorAll('.navbar__nav__ul__element a');
 const topFooterColumns = document.querySelectorAll('.top-footer__column');
 const topFooterUl = document.querySelectorAll('.top-footer__column__ul');
 const topFooterIcon = document.querySelectorAll('.fa-angle-down');
+// AOS init
+AOS.init({
+  // once: true,
+});
 //  nav function
 const hideNav = () => {
   btnHamburger.classList.remove('btn-active');
@@ -35,18 +39,18 @@ btnHamburger.addEventListener('click', () => {
   });
 });
 
-menuItems.forEach(menuItem =>
+menuItems.forEach(menuItem => {
   menuItem.addEventListener('click', e => {
     smoothScroll(e);
     hideNav();
-  }));
+  });
+});
 
 pageGoToButtons.forEach(pageGoToButton => {
   pageGoToButton.addEventListener('click', e => smoothScroll(e));
 });
-
 //  smooth scroll
-function smoothScroll(e) {
+const smoothScroll = e => {
   e.preventDefault();
   const targetId = e.currentTarget.getAttribute("href") === "#" ? "header" : e.currentTarget.getAttribute("href");
   console.log(targetId);
@@ -65,7 +69,7 @@ function smoothScroll(e) {
     window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
     if (progress < duration) window.requestAnimationFrame(step);
   }
-}
+};
 // Easing Functions
 function easeInOutCubic(t, b, c, d) {
   t /= d / 2;
@@ -81,7 +85,9 @@ const scrollFeatures = () => {
     nav.classList.remove('navbar-wrapper-active');
   }
   console.log(pageYOffset);
+
 };
+
 window.addEventListener('scroll', scrollFeatures);
 
 // footer show/hode column
